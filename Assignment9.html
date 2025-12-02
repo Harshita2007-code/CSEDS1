@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Responsive Product Grid</title> 
+  <style> 
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #fcdaf1; 
+      padding: 20px; 
+    } 
+    header{
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #ff7cd3;
+        padding: 10px;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h2 { 
+      text-align: center; 
+      margin-bottom: 20px; 
+    } 
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px; 
+    } 
+    .card { 
+      background: #ede2e9; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      padding: 16px; 
+      text-align: center; 
+    } 
+    .card img { 
+      width: 85%; 
+      height: 350px; 
+      object-fit: cover; 
+      border-radius: 6px; 
+      margin-bottom: 10px; 
+    } 
+    .card h3 { 
+      font-size: 18px; 
+      margin: 8px 0; 
+    } 
+    .card p { 
+      font-size: 14px; 
+      color: #000000; 
+      margin: 4px 0; 
+    } 
+    .price { 
+      font-weight: bold; 
+      color: #0576ef; 
+    } 
+    @media (max-width: 1024px) { 
+      .grid { 
+        grid-template-columns: repeat(2, 1fr);
+      } 
+    } 
+ 
+    @media (max-width: 600px) { 
+      .grid { 
+        grid-template-columns: 1fr;
+      } 
+    } 
+  </style> 
+</head> 
+<body> 
+    <header><h1>VIBEWEAR</h1></header> 
+    <h2>Responsive product grid</h2>
+    <div class="grid"> 
+        <div class="card"> 
+            <img src="https://www.aachho.com/cdn/shop/products/14_d1dc6190-bafc-4ef5-b032-254782583c94_1080x.jpg?v=1684510735" alt="dress1"> 
+            <h3>URBANSTRI</h3> 
+            <p>Floral print anarkali dress.<br>Light weight with premium quality.</p> 
+            <p class="price">₹499</p> 
+        </div> 
+ 
+        <div class="card"> 
+            <img src="https://fabvilla.in/cdn/shop/products/image_ae848ed8-eaf8-4c8b-ac27-f9f60f1fb420.jpg?v=1677942528" alt="dress2"> 
+            <h3>FABVILLA</h3> 
+            <p>Light weight and comfortable.<br>Durable and stylish for daily use.</p> 
+            <p class="price">₹799</p> 
+        </div> 
+ 
+        <div class="card"> 
+            <img src="https://m.media-amazon.com/images/I/71+uD7UoaIL._AC_UY1100_.jpg" alt="dress3"> 
+            <h3>CLAURA</h3> 
+            <p>Pink coloured anarkali dress.<br>Best for the party wear.</p> 
+            <p class="price">₹1,299</p> 
+        </div> 
+ 
+        <div class="card"> 
+            <img src="https://shanayaclothing.com/cdn/shop/files/1-_2_f552c94f-a197-4f6b-874f-39dedf460ee7.jpg?v=1718967386" alt="dress4"> 
+            <h3>SHANAYA</h3> 
+            <p>Off-white anarkali suit.<br>Trendy design with premium quality.</p> 
+            <p class="price">₹999</p> 
+        </div> 
+    </div> 
+</body> 
+</html> 
