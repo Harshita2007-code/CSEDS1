@@ -1,0 +1,78 @@
+<!Doctype html>
+<meta charset="UTF-8">
+<html lang="en">
+<head>
+<title>RESPONSIVE PRODUCT GRID</title>
+<style>
+body{
+background-color:rgb(222, 147, 147);
+font-family:'Times New Roman', Times, serif
+}
+h1{
+font-weight:"bold";
+}
+.product-card{ 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+} 
+.card { 
+    background: #ede2e9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    padding: 16px; 
+    text-align: center; 
+    } 
+.card img { 
+      width: 85%; 
+      height: 350px; 
+      object-fit: cover; 
+      border-radius: 6px; 
+      margin-bottom: 10px; 
+    } 
+    .card p { 
+      font-size: 14px; 
+      color: #000000; 
+      margin: 4px 0; 
+    } 
+.price { 
+      font-weight: bold; 
+      color: #c9491a; 
+    } 
+@media (max-width: 600px) { 
+  .product-card { 
+    grid-template-columns: 1fr;
+  } 
+} 
+</style>
+</head>
+<body>
+<center><h1>RESPONSIVE E-COMMERCE PRODUCT PAGE</h1></center>
+<div class="product-card">
+<div class="card">
+<h2>FASHION</h2>
+<img src="#" alt="image1">
+<p>good and comfortable clothes to wear</p>
+<p class="price">799</p>
+</div>
+<div class="card">
+<h2>ACCESSORIES</h2>
+<img src="#" alt="image2">
+<p>beautiful accessories available</p>
+<p class="price">499</p>
+</div>
+<div class="card">
+<h2>WATCHES</h2>
+<img src="#" alt="image3">
+<p>expensive and imported watches</p>
+<p class="price">4999</p>
+</div>
+<div class="card">
+<h2>STATIONERY</h2>
+<img src="#" alt="image4">
+<p>good quality stationery</p>
+<p class="price">50</p>
+</div>
+</div>
+</body>
+</html>
