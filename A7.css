@@ -1,0 +1,67 @@
+body{
+  background-color: #FFFFFF;
+}
+header { 
+  display: block;
+  background: #e0e0e0d5; 
+  padding: 12px; 
+  text-align: center;
+  border: 3px solid rgb(0, 0, 0);
+}
+.h1{
+  font-size: larger;
+}
+header span { 
+  display: inline; 
+  color: rgb(32, 150, 240); 
+} 
+.inline-block-menu{
+  background-color:#f3f3c8;
+  padding: 10px;
+  font-size: large;
+}
+.inline-block-menu ul { 
+  list-style: none; 
+  padding: 0; 
+  text-align: center;
+} 
+.inline-block-menu li { 
+  display: inline-block; 
+  margin-right: 10px; 
+  text-align: center;
+} 
+.inline-block-menu a { 
+  text-decoration: none; 
+  padding: 5px; 
+  text-align: center; 
+} 
+h3{
+  text-align: center;
+}
+.trendywear{
+  background-color: #7cc8fb;
+  font-size: large;
+  padding: 5px;
+}
+.trendywear ul { 
+  list-style: none; 
+  padding: 0; 
+  text-align: center;
+} 
+.trendywear li { 
+  display: inline-block;
+  margin-right: 10px; 
+  text-align: center;
+} 
+.trendywear a { 
+  text-decoration: none; 
+  padding: 5px; 
+  text-align: center;
+}
+.clear { 
+  clear: both; 
+}
+footer{
+  background-color: rgb(255, 255, 55);
+  width: fit-content;
+}
